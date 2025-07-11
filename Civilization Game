@@ -118,7 +118,7 @@ EnableButton.MouseButton1Click:Connect(function()
 			char:WaitForChild("HumanoidRootPart")
 		end
 
-		-- Teleporta para baixo do alvo (Y = -10)
+		-- Teleporta para baixo do alvo (Y = -4)
 		char:MoveTo(Vector3.new(target.Character.HumanoidRootPart.Position.X, -10, target.Character.HumanoidRootPart.Position.Z))
 		Frame:SetAttribute("Following", true)
 
@@ -134,7 +134,7 @@ EnableButton.MouseButton1Click:Connect(function()
 			end
 
 			if target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
-				char:MoveTo(Vector3.new(target.Character.HumanoidRootPart.Position.X, -10, target.Character.HumanoidRootPart.Position.Z))
+				char:MoveTo(Vector3.new(target.Character.HumanoidRootPart.Position.X, -3, target.Character.HumanoidRootPart.Position.Z))
 			else
 				followConnection:Disconnect()
 			end
